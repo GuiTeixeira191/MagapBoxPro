@@ -1,0 +1,45 @@
+.menu_container {
+    margin-bottom: 20px;
+}
+
+.ul {
+    min-height: 80px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1.8rem;
+    list-style-type: none;
+}
+
+.li {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li:hover {
+    background-color: gray;
+}
+
+@media screen and (min-width: 30em ){
+    .ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .li {
+        flex: 1 0 auto;
+        align-items: center;
+    }
+    
+}
