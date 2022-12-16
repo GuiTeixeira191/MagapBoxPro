@@ -1,0 +1,21 @@
+.footer_container {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media_container {
+
+    margin: 5px;
+}
+
+.media {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px; 
+    border: 1px solid black;
+    border-radius: 5px;
+}

@@ -1,36 +1,45 @@
 import React from 'react'
-import Image from 'next/image'
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { BsYoutube } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-
+import style from './Footer.module.css'
+import { BsLinkedin, BsGithub, BsYoutube, BsInstagram, BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
     return (
-        <div>
-            <div>
-                <a href="https://www.linkedin.com/">
-                <BsLinkedin/>
-                </a>
+        <div className={style.footer}>
+            <div className={style.footer_container}>
+                <div className={style.media_container}>
+                    <a href="https://www.linkedin.com/">
+                    <div className={style.media} >Linkedin&nbsp;<BsLinkedin/></div>
+                    </a>
+                </div>
 
-                <a href="https://www.youtube.com/">
-                <BsYoutube/>
-                </a>
+                <div className={style.media_container}>
+                    <a href="https://www.youtube.com/">
+                    <div className={style.media}>Youtube&nbsp; <BsYoutube/></div>
+                    </a>
+                </div>
 
-                <a href="https://instagram.com/">
-                <BsInstagram />
-                </a>
+                <div className={style.media_container}>
+                    <a href="https://instagram.com/">
+                    <div className={style.media}>Instagram&nbsp;<BsInstagram /></div>
+                    </a>
+                </div>
+
+                <div className={style.media_container}>
+                    <a href="https://www.facebook.com/">
+                    <div className={style.media}>Facebook&nbsp;<BsFacebook/></div>
+                    </a>
+                </div>
             </div>
-
-            <div>
-                Projeto desenvolvido por: Guilherme Teixeira / {}
-                <a  href= 'https://github.com/GuiTeixeira191' >
-                <BsGithub />
-                </a>
-            </div>
-            <small className='container'>
-                <p> &copy; All Rights Reserved</p>
-            </small>
+                <div>
+                    Projeto desenvolvido por: Guilherme Teixeira / {}
+                    <a  href= 'https://github.com/GuiTeixeira191' >
+                    <BsGithub />
+                    </a>
+                </div>
+                <small className='container'>
+                    <p> &copy; All Rights Reserved</p>
+                </small>
+            
         </div>
     )
 }
