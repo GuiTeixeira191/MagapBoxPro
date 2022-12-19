@@ -30,10 +30,10 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-                <div>
-                    Projeto desenvolvido por: Guilherme Teixeira / {}
+                <div className={style.me}>
+                    Projeto desenvolvido por: Guilherme Teixeira /&nbsp;
                     <a  href= 'https://github.com/GuiTeixeira191' >
-                    <BsGithub />
+                    <BsGithub/>&nbsp;<BsLinkedin/>&nbsp;<BsFacebook/>
                     </a>
                 </div>
                 <small className='container'>

@@ -1,48 +1,56 @@
 import React from "react";
 import styles from "./Header.module.css"
 import Link from "next/Link"
+import Image from "next/image";
 
 const Header = () => {
     return (
-        <div className={styles.menu_container}>
-            <div className={styles.nav}>
-                <div className={styles.ul}>
-                    
-                    <div className={styles.li}>
-                        <Link href="/">
+        <div className={styles.header}>
 
-                            Home
+            <div className={styles.logo}>
+                <Image src='/logo_magap.png' width={200} height={200} alt="Logo" />
+            </div>
 
-                        </Link>
-                    </div>
+            <div className={styles.menu_container}>
+                <div className={styles.nav}>
+                    <div className={styles.ul}>
+                        
+                        <div className={styles.li}>
+                            <Link href="/">
 
-                    <div className={styles.li}>
-                        <Link href="/">
+                                Home
 
-                                Clientes
+                            </Link>
+                        </div>
 
-                        </Link>
-                    </div>
-                    <div className={styles.li}>
-                        <Link href="/Brinquedos">
+                        <div className={styles.li}>
+                            <Link href="/">
 
-                                Contato
+                                    Clientes
 
-                        </Link>
-                    </div> 
-                    <div className={styles.li}>
-                        <Link href="/">
+                            </Link>
+                        </div>
+                        <div className={styles.li}>
+                            <Link href="/Brinquedos">
 
-                                Pesquisa
+                                    Contato
 
-                        </Link>
-                    </div>
-                    <div className={styles.li}>
-                        <Link href="/">
+                            </Link>
+                        </div> 
+                        <div className={styles.li}>
+                            <Link href="/">
 
-                                Sobre nós
+                                    Pesquisa
 
-                        </Link>
+                            </Link>
+                        </div>
+                        <div className={styles.li}>
+                            <Link href="/">
+
+                                    Sobre nós
+
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

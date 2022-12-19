@@ -1,12 +1,19 @@
+.footer {
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
 .footer_container {
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .media_container {
-
     margin: 5px;
 }
 
@@ -18,4 +25,21 @@
     padding: 2px; 
     border: 1px solid black;
     border-radius: 5px;
+}
+ .me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ @media screen and (max-width: 450px ){
+    .media_container {
+        flex-wrap: wrap;
+    }
+
+    .me {
+        flex: 1 0 auto;
+        align-items: center;
+    }
+    
 }
