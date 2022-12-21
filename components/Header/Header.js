@@ -24,7 +24,7 @@ const Header = () => {
                         </div>
 
                         <div className={styles.li}>
-                            <Link href="/">
+                            <Link href="/Clientes">
 
                                     Clientes
 
