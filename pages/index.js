@@ -1,4 +1,4 @@
-import PageTitle from '../components/Layout/PageTitle'
+import PageTitle from '../components/Layout/PageTitle/PageTitle'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {

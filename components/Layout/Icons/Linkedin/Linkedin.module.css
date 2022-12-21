@@ -1,0 +1,11 @@
+.link {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #0e76a8;
+    width: 105px;
+    height: 30px;
+}
