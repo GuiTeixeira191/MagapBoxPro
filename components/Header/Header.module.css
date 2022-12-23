@@ -4,8 +4,15 @@
 
 .logo {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: center; 
+}
+
+.background {
+    background-image: url(/usinagem.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;   
 }
 
 .menu_container {
